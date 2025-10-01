@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    vector<int> v = {10, 20, 30, 40, 50, 60};
+
+    cout << "Original vector: ";
+    for (int x : v) cout << x << " ";
+    cout << "\n";
+
+    v.erase(v.begin() + 1);  
+    cout << "After erasing 2nd element: ";
+    for (int x : v) cout << x << " ";
+    cout << "\n";
+
+    v.erase(v.begin() + 1, v.begin() + 4);
+    cout << "After erasing elements from 2nd to 4th: ";
+    for (int x : v) cout << x << " ";
+    cout << "\n";
+
+    return 0;
+}
